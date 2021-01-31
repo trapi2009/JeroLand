@@ -16,10 +16,23 @@
         alert("So, let's take a tour.")
       }
     }
+    function backColorChange() {
+      switch (backColor) {
+        case 1:
+          document.body.style.backgroundColor = "rgb(0,0,255)";
+          backColor = 2;
+        break;
+        case 2:
+          document.body.style.backgroundColor = "rgb(0,255,0)";
+          backColor = 1;
+        break;
+      }
+    }
   </script>
 </head>
 <body>
   <h1>Welcome to JeroLand!</h1>
   <button onclick="start();" id="starter-button">Start your adventure!</button>
+  <button onclick="backColorChange();" id="backy">Start your adventure!</button>
 </body>
 </html>
